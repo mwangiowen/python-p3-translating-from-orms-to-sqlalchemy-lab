@@ -26,3 +26,24 @@ def find_by_name_and_breed(session, name, breed):
 def update_breed(session, dog, breed):
     dog.breed = breed
     session.commit()
+
+from sqlalchemy import create_engine, orm
+
+# engine = create_engine('your_database_url')  # Replace 'your_database_url' with the actual database URL.
+# Session = orm.sessionmaker(bind=engine)
+# session = Session()
+# Example usage:
+
+
+
+#!
+# dog1 = Dog(name='Buddy', breed='Golden Retriever')
+# save(session, dog1)
+
+# all_dogs = get_all(session)
+# print(all_dogs)
+
+# dog_by_name = find_by_name(session, 'Buddy')
+# print(dog_by_name)
+
+# ... (use other functions as needed)
